@@ -5,30 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clocks</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
     <h1>World Clocks</h1>
-    <select name="" id="">
+    <select name="" id="city">
       <option value=""> Select a city</option>
-      <option value="">New York</option>
+      <option value="Current">Current Location</option>
+      <option value="America/New_York">New York</option>
       <option value="">Bogota</option>
-      <option value="">Sicily</option>
+      <option value="">Venice</option>
       <option value=""> Mykonos</option>
     </select>
-    <div class="city">
+    <div id="cities">
+    <div class="city" id="new-york">
+      <div>
     <h2>New York </h2>
     </div>
     <div class="date"> July 26, 2003</div>
     <div class="time">7:00pm</div>
-    <div class="city">
+    <div>
+    <div class="city" id="bogota">
+    </div>
     <h2>Bogota </h2>
     </div>
     <div class="date"> July 26, 2003</div>
     <div class="time">7:00pm</div>
+  </div>
+  <div>
+    <div class="city" id="venice">
+    <h2> Venice </h2>
+    </div>
+    <div class="date"> July 26, 2003</div>
+    <div class="time">7:00pm</div>
+  </div>
+</div>
     <footer>
-      This project was coded by Thaisha Rivera and is
-      <a href="" target=""> sourced on Github</a>.
+      This project was coded by Thaisha Rivera and is open sourced on
+      <a href="https://github.com/Trivera0713/World-Clocks" target="blank">  Github</a>.
   </div>  
 </footer>
     <script src="JAVASCRIPT/index.js"></script>
