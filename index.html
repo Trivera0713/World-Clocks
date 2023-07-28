@@ -6,48 +6,60 @@
     <title>World Clocks</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
-    <h1>World Clocks</h1>
-    <select id="city">
-      <option value=""> Select a city</option>
-      <option value="Current">Current Location</option>
-      <option value="Pacific/Tahiti">Tahiti</option>
-      <option value="America/Bogota">Bogota</option>
-      <option value="Europe/Rome">Rome</option>
-      <option value="Asia/Tokyo"> Tokyo</option>
-    </select>
-    <div id="cities">
-    <div class="city" id="tahiti">
-      <div>
-    <h2>Tahiti </h2>
+      <h1>World Clock</h1>
+      <select
+        id="city"
+        onfocus="this.size=6"
+        ;
+        onblur="this.size=0"
+        ;
+        onchange="this.size=1;this.blur();"
+      >
+        <option value="">Select a city</option>
+        <option value="Current">Current Location</option>
+        <option value="Pacific/Tahiti">Tahiti</option>
+        <option value="America/Bogota">Bogota</option>
+        <option value="Europe/Rome">Rome</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+      </select>
+      <div id="cities">
+        <div class="city" id="tahiti">
+          <div>
+            <h2>Tahiti</h2>
+            <div class="date">July 26, 2003</div>
+          </div>
+          <div class="time">7:00pm</div>
+        </div>
+
+        <div class="city" id="bogota">
+          <div>
+            <h2>Bogota</h2>
+            <div class="date">July 26, 2003</div>
+          </div>
+          <div class="time">7:00pm</div>
+        </div>
+
+        <div class="city" id="rome">
+          <div>
+            <h2>Rome</h2>
+            <div class="date">July 26, 2003</div>
+          </div>
+          <div class="time">7:00pm</div>
+        </div>
+      </div>
+      <footer>
+        This project was coded by <strong> Thaisha Rivera</strong> and is open
+        sourced on
+        <a href="https://github.com/Trivera0713/World-Clocks" target="blank">
+          Github</a
+        >.
+      </footer>
     </div>
-    <div class="date"> July 26, 2003</div>
-    <div class="time">7:00pm</div>
-    <div>
-    <div class="city" id="bogota">
-    <div>
-    <h2>Bogota </h2>
-    </div>
-    <div class="date"> July 26, 2003</div>
-    <div class="time">7:00pm</div>
-  </div></div>
-  <div>
-    <div class="city" id="rome">
-      <div>
-    <h2> Rome</h2>
-    </div>
-    <div class="date"> July 26, 2003</div>
-    <div class="time">7:00pm</div>
-  </div>
-</div>
-    <footer>
-      This project was coded by Thaisha Rivera and is open sourced on
-      <a href="https://github.com/Trivera0713/World-Clocks" target="blank">  Github</a>.
-  </div>  
-</footer>
+
     <script src="JAVASCRIPT/index.js"></script>
   </body>
 </html>

@@ -1,4 +1,96 @@
+body {
+  background: url(/images/nasa-Q1p7bh3SHj8-unsplash.jpg);
+  background-size: cover, contain;
+}
 h1,
 footer {
   text-align: center;
+  color: white;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  font-size: 75px;
+  text-shadow: 5px 5px 2px rgb(110, 187, 254);
+  margin: 30px;
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-family: Lemon/Milk;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  border-width: 4px;
+  border-color: rgb(230, 210, 56);
+  margin-bottom: 40px;
+}
+a {
+  color: yellow;
+}
+option:checked,
+option:hover {
+  background-color: rgb(252, 233, 92);
+}
+footer {
+  margin-top: 30px;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  box-shadow: rgba(255, 247, 7, 0.3) 9px 7px 20px -1px,
+    rgba(206, 191, 58, 43%) -10px 10px 20px 0px,
+    rgba(255, 247, 7, 0.3) 0px -2px 11px 8px inset;
+  background: rgba(1, 1, 1, 0.6);
+  border: 2px solid rgb(250, 235, 122);
+  border-radius: 10px;
+}
+.city {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  padding: 10px 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: 2px solid white;
+  color: white;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.city:last-child {
+  border: none;
+}
+.time {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.time small {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.date {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#tahiti.city {
+  background: linear-gradient(rgba(42, 51, 53, 0.38), rgba(46, 67, 56, 0.3)),
+    url(/images/tahiti.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#bogota.city {
+  background: url(/images/bogota.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+#rome.city {
+  background: url(/images/venice.jpg);
+  background-size: cover;
+  background-position: center bottom -80px;
 }
