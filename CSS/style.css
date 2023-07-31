@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lemon/Milk;
+  src: url(/font/lemon_milk/LemonMilk.otf);
+}
 body {
   background: url(/images/nasa-Q1p7bh3SHj8-unsplash.jpg);
   background-size: cover, contain;

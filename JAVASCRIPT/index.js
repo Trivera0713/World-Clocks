@@ -54,7 +54,6 @@ function updateCity(event) {
     </div>  
     <a href="index.html">Return to Homepage</a>`;
 }
-
 updateTime();
 setInterval(updateTime, 1000);
 
